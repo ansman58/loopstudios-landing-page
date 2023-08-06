@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-josefin: "Josefin Sans", sans-serif;
+  --fs-15: "0.9375rem";
+  --fw-300: 300;
+  --fw-400: 400;
+}
+
+body {
+  font-size: var(--fs-15);
+  font-family: var(--font-josefin);
+}
