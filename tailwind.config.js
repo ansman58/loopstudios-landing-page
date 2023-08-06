@@ -15,6 +15,7 @@ module.exports = {
     fontSize: {
       15: "15px",
       45: "2.8125rem",
+      25: "1.6rem"
     },
     extend: {
       fontFamily: {

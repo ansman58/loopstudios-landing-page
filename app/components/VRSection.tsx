@@ -4,7 +4,7 @@ import SectionImage from "../assets/images/desktop/image-interactive.jpg";
 // app/assets/images/desktop/image-interactive.jpg
 const VRSection = () => {
   return (
-    <section className="md:flex justify-center bg-[red]">
+    <section className="md:flex justify-center px-[1.5rem]">
       <div className="md:flex items-end">
         <div className="md:basis-[50%]">
           <Image
