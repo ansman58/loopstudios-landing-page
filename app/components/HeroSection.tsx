@@ -4,24 +4,30 @@ import React from "react";
 import BackgroundImageMobile from "../assets/images/mobile/image-hero.jpg";
 import BackgroundImageDesktop from "../assets/images/desktop/image-hero.jpg";
 import { useWindowSize } from "../hooks/useWindowSize";
+import Menu from "./Menu";
 
 const HeroSection = () => {
   const { width } = useWindowSize();
   const isMobile = width < 768;
 
   return (
-    <section
-      className="bg-no-repeat bg-cover h-[600px] flex absolue inset-0"
+    <div
+      className="bg-no-repeat bg-cover grid h-[600px] absolue inset-0 py-[20px] px-[25px]"
       style={{
         backgroundImage: `url(${
           isMobile ? BackgroundImageMobile.src : BackgroundImageDesktop.src
         })`,
       }}
     >
-      <h1 className="text-white border-white text-center border-[1px] border-solid m-auto max-w-[90%]">
-        IMMERSIVE EXPERIENCES THAT DELIVER
-      </h1>
-    </section>
+      <Menu className="mb-[50px]" />
+      <section>
+        <article className="border-[1px] border-solid m-s p-[1.875rem] border-white opacity-[0.9] my-auto">
+          <h2 className="text-white text-[24px] font-[200] ">IMMERSIVE</h2>
+          <h2 className="text-white text-[24px] font-[200] ">EXPERIENCES</h2>
+          <h2 className="text-white text-[24px] font-[200] ">THAT DELIVER</h2>
+        </article>
+      </section>
+    </div>
   );
 };
 

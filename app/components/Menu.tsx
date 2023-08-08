@@ -6,7 +6,10 @@ import React, { use } from "react";
 import { FaBars } from "react-icons/fa6";
 import { HiOutlineX } from "react-icons/hi";
 
-const Menu = () => {
+interface IMenu {
+  className?: string;
+}
+const Menu = (props: IMenu) => {
   const menu = ["About", "Careers", "Events", "Products", "Support"];
 
   const [isMobileMenu, setisMobileMenu] = React.useState(false);
@@ -14,7 +17,12 @@ const Menu = () => {
   const onToggleMenu = () => setisMobileMenu(!isMobileMenu);
 
   return (
-    <header className="z-10 w-full flex md:justify-between bg-black h-9 md:h-[unset] items-center justify-between relative md:bg-[unset]">
+    <header
+      className={clsx(
+        props.className,
+        "z-10 w-full flex md:justify-between bg-back h-9 md:h-[unset] items-center justify-between relative md:bg-[unset]"
+      )}
+    >
       <h1 className="font-alata text-white text-[2.25rem] md:basis-[45%]">
         loopstudios
       </h1>

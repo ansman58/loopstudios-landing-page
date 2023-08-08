@@ -24,53 +24,56 @@ const CreationsSection = () => {
   const { width } = useWindowSize();
   const isMobile = width < 768;
   return (
-    <section className="px-[1.5rem]  ">
-      <article className="flex justify-between">
-        <h1 className="text-45 text-center">OUR CREATIONS</h1>
-        <button>SEE ALL</button>
+    <section className="px-[1.5rem]  text-center">
+      <article className="flex justify-between mb-[30px]">
+        <h2 className="w-full text-center text-[24px]">OUR CREATIONS</h2>
+        <button className="hidden">SEE ALL</button>
       </article>
       <div className="md:grid md:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
         <ImageCard
           backgroundImage={isMobile ? DeepEarthMobile : DeepEarth}
-          text1="DEEP EARTH"
-          //   text2="EARTH"
+          text1="DEEP"
+          text2="EARTH"
         />
         <ImageCard
           backgroundImage={isMobile ? NightArcadeMobile : NightArcade}
-          text1="NIGHT ARCADE"
-          //   text2="ARCADE"
+          text1="NIGHT"
+          text2="ARCADE"
         />
         <ImageCard
           backgroundImage={isMobile ? SoccerTeamMobile : SoccerTeam}
-          text1="SOCCER TEAM VR"
-          //   text2="TEAM VR"
+          text1="SOCCER"
+          text2="TEAM VR"
         />
         <ImageCard
           backgroundImage={isMobile ? GridMobile : Grid}
-          text1="THE GRID"
-          //   text2="GRID"
+          text1="THE"
+          text2="GRID"
         />
         <ImageCard
           backgroundImage={isMobile ? FromAboveMobile : FromAbove}
-          text1="FROM UP ABOVE VR"
-          //   text2="ABOVE VR"
+          text1="FROM UP"
+          text2="ABOVE VR"
         />
         <ImageCard
           backgroundImage={isMobile ? PocketBorealisMobile : PocketBorealis}
-          text1="POCKET BOREALIS"
-          //   text2="BOREALIS"
+          text1="POCKET"
+          text2="BOREALIS"
         />
         <ImageCard
           backgroundImage={isMobile ? CuriosityMobile : Curiosity}
-          text1="THE CURIOSITY"
-          //   text2="CURIOSITY"
+          text1="THE "
+          text2="CURIOSITY"
         />
         <ImageCard
           backgroundImage={isMobile ? FisheyeMobile : Fisheye}
-          text1="MAKE IT FISHEYE"
-          //   text2="FISHEYE"
+          text1="MAKE IT"
+          text2="FISHEYE"
         />
       </div>
+      <button className="border-2 border-black h-[40px] w-[120px] mb-[50px] border-solid">
+        SEE ALL
+      </button>
     </section>
   );
 };

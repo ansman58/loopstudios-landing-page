@@ -8,11 +8,10 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main>
-      <Menu />
       <HeroSection />
       <VRSection />
       <CreationsSection />
-      <Footer/>
+      <Footer />
     </main>
   );
 }

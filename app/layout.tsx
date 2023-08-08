@@ -5,7 +5,7 @@ import { Josefin_Sans, Alata } from "next/font/google";
 const josefinSans = Josefin_Sans({
   subsets: ["latin"],
   variable: "--font-josefin-sans",
-  weight: "300",
+  weight: ["200", "300"],
 });
 
 const alata = Alata({
