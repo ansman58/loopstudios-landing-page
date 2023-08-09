@@ -12,7 +12,7 @@ const HeroSection = () => {
 
   return (
     <div
-      className="bg-no-repeat bg-cover grid h-[600px] absolue inset-0 py-[20px] px-[25px]"
+      className="bg-no-repeat bg-cover grid h-[600px] absolue inset-0 py-[20px] px-[25px]  md:px-[100px]"
       style={{
         backgroundImage: `url(${
           isMobile ? BackgroundImageMobile.src : BackgroundImageDesktop.src
@@ -21,7 +21,7 @@ const HeroSection = () => {
     >
       <Menu className="mb-[50px]" />
       <section>
-        <article className="border-[1px] border-solid m-s p-[1.875rem] border-white opacity-[0.9] my-auto">
+        <article className="border-[1px] border-solid m-s p-[1.875rem] border-white md:max-w-fit md:p-[20px_80px_20px_20px] opacity-[0.9] my-auto">
           <h2 className="text-white text-[24px] font-[200] ">IMMERSIVE</h2>
           <h2 className="text-white text-[24px] font-[200] ">EXPERIENCES</h2>
           <h2 className="text-white text-[24px] font-[200] ">THAT DELIVER</h2>

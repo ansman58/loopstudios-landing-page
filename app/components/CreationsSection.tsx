@@ -24,12 +24,16 @@ const CreationsSection = () => {
   const { width } = useWindowSize();
   const isMobile = width < 768;
   return (
-    <section className="px-[1.5rem]  text-center">
-      <article className="flex justify-between mb-[30px]">
-        <h2 className="w-full text-center text-[24px]">OUR CREATIONS</h2>
-        <button className="hidden">SEE ALL</button>
+    <section className="px-[1.5rem] md:px-[100px] text-center md:mb-[100px]">
+      <article className="flex justify-between mb-[30px] md:mb-[50px]">
+        <h2 className="w-full text-center md:text-left text-[24px]">
+          OUR CREATIONS
+        </h2>
+        <button className="hidden md:block border-2 border-black h-[40px] w-[120px] border-solid hover:bg-black hover:text-white">
+          SEE ALL
+        </button>
       </article>
-      <div className="md:grid md:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
+      <div className="md:grid md:gap-[20px] md:grid-cols-[repeat(4,_1fr)]">
         <ImageCard
           backgroundImage={isMobile ? DeepEarthMobile : DeepEarth}
           text1="DEEP"
@@ -71,7 +75,7 @@ const CreationsSection = () => {
           text2="FISHEYE"
         />
       </div>
-      <button className="border-2 border-black h-[40px] w-[120px] mb-[50px] border-solid">
+      <button className="border-2 border-black h-[40px] w-[120px] mb-[50px] border-solid md:hidden hover:bg-black hover:text-white">
         SEE ALL
       </button>
     </section>

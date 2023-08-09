@@ -8,14 +8,18 @@ interface IImageCard {
 }
 const ImageCard = (props: IImageCard) => {
   return (
-    <figure className="mb-[1rem] relative ">
-      <Image src={props.backgroundImage} alt="" />
+    <div className="relative">
+    <figure className="mb-[1rem] md:mb-0 relative w-[100] block ">
+      <Image src={props.backgroundImage} alt="" className="object-cover w-full max-w-full"/>
 
       <article className="absolute pl-[20px] bottom-[1rem] text-white text-25">
         <h2 className="text-left">{props.text1}</h2>
         <h2>{props.text2}</h2>
       </article>
     </figure>
+    <div className="absolute inset-0 bg-black opacity-[0.2]"></div>
+    </div>
+
   );
 };
 

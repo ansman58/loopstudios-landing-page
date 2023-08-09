@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  .footer {
+    display: grid;
+    // background-color: red !important;
+    grid-template-areas:
+      "logo socials"
+      "links links";
+  }
+  .copyright {
+    grid-area: "copyright";
+  }
+
+  .logo {
+    grid-area: "logo";
+  }
+
+  .socials {
+    grid-area: "socials";
+  }
+
+  .links {
+    grid-area: "links";
+  }
+}

@@ -22,9 +22,8 @@ body {
   font-family: var(--font-josefin);
 }
 
-@media(max-width: 768px){
-  h2{
+@media (max-width: 768px) {
+  h2 {
     line-height: 30px;
-    
   }
 }
