@@ -1,24 +1,26 @@
 @media (min-width: 768px) {
   .footer {
     display: grid;
-    // background-color: red !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
     grid-template-areas:
       "logo socials"
-      "links links";
+      "links copyright";
   }
   .copyright {
-    grid-area: "copyright";
+    grid-area: copyright;
   }
 
   .logo {
-    grid-area: "logo";
+    grid-area: logo;
   }
 
   .socials {
-    grid-area: "socials";
+    grid-area: socials;
+    justify-self: end;
   }
 
   .links {
-    grid-area: "links";
+    grid-area: links;
   }
 }

@@ -24,7 +24,7 @@ const CreationsSection = () => {
   const { width } = useWindowSize();
   const isMobile = width < 768;
   return (
-    <section className="px-[1.5rem] md:px-[100px] text-center md:mb-[100px]">
+    <section className="px-[1.5rem] md:px-[50px] lg:px-[100px] text-center md:mb-[100px]">
       <article className="flex justify-between mb-[30px] md:mb-[50px]">
         <h2 className="w-full text-center md:text-left text-[24px]">
           OUR CREATIONS
