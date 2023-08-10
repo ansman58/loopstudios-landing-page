@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 
 export const useWindowSize = () => {
@@ -9,13 +7,17 @@ export const useWindowSize = () => {
   });
 
   React.useEffect(() => {
-
     const handleResize = () => {
       setWindowSize({
         width: window.innerWidth,
         height: window.innerHeight,
       });
     };
+
+    // Update the initial state on client side mount
+    if (typeof window !== "undefined") {
+      handleResize();
+    }
 
     window.addEventListener("resize", handleResize);
     return () => {
