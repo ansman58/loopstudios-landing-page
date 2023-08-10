@@ -19,10 +19,18 @@ import PocketBorealisMobile from "../assets/images/mobile/image-pocket-borealis.
 import CuriosityMobile from "../assets/images/mobile/image-curiosity.jpg";
 import FisheyeMobile from "../assets/images/mobile/image-fisheye.jpg";
 import { useWindowSize } from "../hooks/useWindowSize";
+import { StaticImageData } from "next/image";
 
 const CreationsSection = () => {
   const { width } = useWindowSize();
-  const isMobile = width < 768;
+
+  const chooseBackgroundImage = (
+    mobileImage: StaticImageData,
+    desktopImage: StaticImageData
+  ) => {
+    return width < 768 ? mobileImage : desktopImage;
+  };
+
   return (
     <section className="px-[1.5rem] md:px-[50px] lg:px-[100px] text-center md:mb-[100px]">
       <article className="flex justify-between mb-[30px] md:mb-[50px]">
@@ -35,42 +43,48 @@ const CreationsSection = () => {
       </article>
       <div className="md:grid md:gap-[20px] md:grid-cols-[repeat(4,_1fr)]">
         <ImageCard
-          backgroundImage={isMobile ? DeepEarthMobile : DeepEarth}
+          backgroundImage={chooseBackgroundImage(DeepEarthMobile, DeepEarth)}
           text1="DEEP"
           text2="EARTH"
         />
         <ImageCard
-          backgroundImage={isMobile ? NightArcadeMobile : NightArcade}
+          backgroundImage={chooseBackgroundImage(
+            NightArcadeMobile,
+            NightArcade
+          )}
           text1="NIGHT"
           text2="ARCADE"
         />
         <ImageCard
-          backgroundImage={isMobile ? SoccerTeamMobile : SoccerTeam}
+          backgroundImage={chooseBackgroundImage(SoccerTeamMobile, SoccerTeam)}
           text1="SOCCER"
           text2="TEAM VR"
         />
         <ImageCard
-          backgroundImage={isMobile ? GridMobile : Grid}
+          backgroundImage={chooseBackgroundImage(GridMobile, Grid)}
           text1="THE"
           text2="GRID"
         />
         <ImageCard
-          backgroundImage={isMobile ? FromAboveMobile : FromAbove}
+          backgroundImage={chooseBackgroundImage(FromAboveMobile, FromAbove)}
           text1="FROM UP"
           text2="ABOVE VR"
         />
         <ImageCard
-          backgroundImage={isMobile ? PocketBorealisMobile : PocketBorealis}
+          backgroundImage={chooseBackgroundImage(
+            PocketBorealisMobile,
+            PocketBorealis
+          )}
           text1="POCKET"
           text2="BOREALIS"
         />
         <ImageCard
-          backgroundImage={isMobile ? CuriosityMobile : Curiosity}
+          backgroundImage={chooseBackgroundImage(CuriosityMobile, Curiosity)}
           text1="THE "
           text2="CURIOSITY"
         />
         <ImageCard
-          backgroundImage={isMobile ? FisheyeMobile : Fisheye}
+          backgroundImage={chooseBackgroundImage(FisheyeMobile, Fisheye)}
           text1="MAKE IT"
           text2="FISHEYE"
         />

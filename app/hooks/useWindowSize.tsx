@@ -4,11 +4,12 @@ import React from "react";
 
 export const useWindowSize = () => {
   const [windowSize, setWindowSize] = React.useState({
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 0,
+    height: 0,
   });
 
   React.useEffect(() => {
+
     const handleResize = () => {
       setWindowSize({
         width: window.innerWidth,
