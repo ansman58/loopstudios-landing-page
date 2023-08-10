@@ -17,7 +17,7 @@ const VRSection = () => {
           <h2 className="leading-[30px] text-[24px] mb-[20px]">
             THE LEADER IN INTERACTIVE VR
           </h2>
-          <p className="text-darkGray pb-[80px]">
+          <p className="text-darkGray lg:pb-[80px]">
             Founded in 2011, Loopstudios has been producing world-class virtual
             reality projects for some of the best companies around the globe.
             Our award-winning creations have transformed businesses through
