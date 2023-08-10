@@ -13,7 +13,7 @@ const VRSection = () => {
             className="mb-[30px] mx-auto lg:mx-0"
           />
         </div>
-        <article className="bg-white text-center lg:text-left lg:translate-x-[-25%] lg:basis-[50%] lg:h-[60%] pt-[50px] lg:pt-[20px] lg:pl-[50px] pl-[100px] self-end">
+        <article className="bg-white text-center lg:text-left lg:translate-x-[-25%] lg:basis-[50%] lg:h-[60%] pt-[50px] lg:pt-[20px] lg:pl-[50px]  self-end">
           <h2 className="leading-[30px] text-[24px] mb-[20px]">
             THE LEADER IN INTERACTIVE VR
           </h2>

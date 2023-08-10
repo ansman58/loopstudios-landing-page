@@ -20,11 +20,11 @@ const HeroSection = () => {
       }}
     >
       <Menu className="mb-[50px]" />
-      <section className="">
-        <article className="border-[1px] border-solid m-s p-[1.875rem] border-white md:max-w-fit md:p-[20px_80px_20px_20px] opacity-[0.9] my-auto">
-          <h2 className="text-white text-[24px] font-[200] ">IMMERSIVE</h2>
-          <h2 className="text-white text-[24px] font-[200] ">EXPERIENCES</h2>
-          <h2 className="text-white text-[24px] font-[200] ">THAT DELIVER</h2>
+      <section className="px-[2rem] md:px-[50px] lg:px-[100px]">
+        <article className="border-[1px] border-solid p-[1.875rem] border-white md:p-[1.6rem] max-w-[32rem] lg:max-w-[44rem] lg:p-[2.65rem_2.65rem_2rem] opacity-[0.9] my-auto">
+          <h1 className="text-white text-[36px] lg:text-[3.5rem] lg:leading-[97%]">
+            IMMERSIVE EXPERIENCES THAT DELIVER
+          </h1>
         </article>
       </section>
     </div>
